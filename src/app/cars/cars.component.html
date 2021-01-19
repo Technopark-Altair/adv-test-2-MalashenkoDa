@@ -1,0 +1,9 @@
+<p>cars works!</p>
+<div >
+    <a class="car" *ngFor="let car of cars" routerLink="car/{{car['id']}}">
+      <p> {{car.brandName}},{{car.modelName}},{{car.priceInRub}}</p>
+    
+
+
+    </a>
+  </div>

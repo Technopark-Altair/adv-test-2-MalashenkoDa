@@ -1,0 +1,20 @@
+<p>add-car works!</p>
+<div *ngIf="newcar">
+
+    <div >
+        <p>brand</p>
+        <input type="text" [(ngModel)]="newcar.brandName">
+      </div>
+    
+      <div >
+        <p>model</p>
+              <input type="text" [(ngModel)]="newcar.modelName">
+      </div>
+    
+      <div>
+        <p>price</p>
+   <input type="number" [(ngModel)]="newcar.priceInRub">
+      </div>
+      <button (click)="addNewCar()" >Add</button>
+</div>
+
